@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+nav {
+    width: 70vw;
+    padding: 1rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 1%;
+    justify-self: center;
+    transition: top 300ms linear;
+}
+
+.nav_hides{
+    top: -15%;
+}
+
+.nav_extra_styling{
+    border-radius: 6rem;
+    box-shadow: 5px 20px 40px #00000014, 5px -10px 40px #00000014;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    padding: 0 10px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+input[type="submit"]{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 14px;
+    color: purple;
+    background-color: white;
+    border: 1px solid purple;
+    border-radius: 4px;
+    letter-spacing: 0.8px;
+}
+
+input[class="start"]{
+    color: white;
+    background-color: purple;
+}
+
+header{
+    width: 50vw;
+    font-size: 1.6em;
+    margin: 1em auto;
+    margin-top: 4em;
+    text-align: center;
+}
+
+header h1{
+    width: 100%;
+    height: 1.3em;
+    background-color: rgba(175, 218, 245, 0.05);
+    margin-right: auto;
+}
+
+header p{
+    font-size: 0.7em;
+    padding: 14px 0 7px 10px;
+}
+
+.scrollHeading{
+    display: inline-flex;
+    flex-direction: column;
+    color: blueviolet;
+    height: 100%;
+    width: 14%;
+    overflow: hidden;
+    animation: widthlength 2.5s 1;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+.extraScroll{
+    animation: widthlength 2.5s 1;
+    animation-timing-function: linear;
+    animation-delay: 8s;
+}
+
+@keyframes widthlength {
+    0%{
+        width: 14%;
+        
+    }
+    16%{
+        width: 52%;
+        
+    }
+    32%{
+        width: 52%;
+        
+    }
+    48%{
+        width: 52%;
+        
+    }
+    64%{
+        width: 52%;
+        
+    }
+    80%{
+        width: 52%;
+        
+    }
+    100%{
+        width: 14%;
+        
+    }
+}
+
+.scrollHeading li{
+    width: 100%;
+    animation: scroll 2s 1;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll {
+    0%{
+        padding-top: 6px;
+       transform: translateY(0);
+    }
+    16%{
+        padding-top: 6px;
+        transform: translateY(-1.3em);
+    }
+    32%{
+        padding-top: 6px;
+        transform: translateY(-2.6em);
+    }
+    48%{
+        padding-top: 6px;
+        transform: translateY(-3.9em);
+    }
+    64%{
+        padding-top: 6px;
+        transform: translateY(-5.2em);
+    }
+    80%{
+        padding-top: 6px;
+        transform: translateY(-6.5em);
+    }
+    100%{
+        padding-top: 6px;
+        transform: translateY(-7.8em);    
+    }
+}
+
+header button {
+    font-size: 0.6em;
+    padding: 1em 1.8em 1em 1.8em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+header .btn1 {
+    color: white;
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 4px;
+}
+
+header .btn2 {
+    color: purple;
+    border: 1px solid purple;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.pictorial {
+    width: 50vw;
+    margin: 4em auto;
+    margin-bottom: 0;
+}
+
+.pictorial ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.pictorial video {
+    width: 90%;
+    margin: 3em;
+    border-radius: 6px;
+}
+
+.title {
+    width: 41vw;
+    margin: 0 auto;
+}
+
+.title h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.title ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.title li{
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.ellipse {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin-top: -30em;
+    z-index: -1;
+    margin-bottom: 0;    
+}
+
+.titleExplain{
+    width: 80%;
+    padding-top: 4em;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-bottom: 4em;
+}
+
+.titleDetails{
+    width: 70%;
+    font-size: 1.3em;
+    word-spacing: 7px;
+    margin-bottom: 20em;
+}
+
+.titleDetails h4, .titleDetails h2, .titleDetails p{
+    margin: 0.8em 0;
+}
+
+.titleDetails h4{
+    text-transform: uppercase;
+}
+
+.titleExtraDetails{
+    margin: 3em 0;
+}
+
+.titleExtraDetails span{
+    font-size: 2.4em;
+    font-weight: bolder;
+    color: #9602c7;
+    float: left;
+    margin-right: 0.3em;
+}
+
+.titleVid{
+    height: 70vh;
+    width: 80vw;
+    background-image: url("/images/svg/rectCircle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 9em;
+    background-position-y: -2.1em;
+    position: sticky;
+    top: 16vh;
+}
+
+.titleVidCollection{
+    position: relative;
+}
+
+.titleVid video{
+    width: 33vw;
+    border-radius: 6px;
+    position: absolute;
+    transition: all 100ms linear;
+}
+
+.titleVidDisappear{
+    transform: translateX(70px) scale(0.9);
+    opacity: 0;    
+}
+
+.lastTitleDet{
+    margin-bottom: 6.5em;
+}
+
+.titleCummulative, .titleVid{
+    padding-top: 6em;
+}
+
+.lastDetail {
+    width: 65vw;
+    height: 45vh;
+    box-shadow: 5px 5px 35px grey;
+    background: linear-gradient(#d1f1ff 0%, #e3edff 35%, #fbf4ff 55%, #fff 100%);
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 1.5em 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastDetail video{
+    width: 50%;
+    height: 100%;
+}
+
+.Agentforce h4, .Agentforce h2, .Agentforce p{
+    font-size: 1.5em;
+    word-spacing: 3px;
+    width: 80%;
+    margin: 0.2em 0;
+}
+
+.Agentforce h4{
+    font-size: 1em;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+.Agentforce h2{
+    font-size: 3em;
+}
+
+.Agentforce .more{
+    color: #1264a3;
+    margin-top: 0.8em;
+}
+
+.innovation{
+    width: 50vw;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+.tabs{
+    width: 65vw;
+    height: 35vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.tabDetails{
+    width: 15%;
+    height: 100%;
+    margin: 0 0.6em;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: width 0.5s linear;
+}
+
+.openAITab{
+    width: 45%;
+}
+
+.tabDetails video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.exceptVid{
+    width: 60vh;
+    padding: 0 0.6em;
+    color: #fbf4ff;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 1.2em;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tabDetails img{
+    position: relative;
+    top: -11.8em;
+    left: 0.8em;
+}
+
+.text_svg{
+    font-family: Salesforce-Sans", system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.text_svg h3{
+    width: 75%;
+}
+
+.tabBtns{
+    width: 30%;
+    margin: 5em auto 0 auto;
+    padding-left: 5em;
+}
+
+.tabSectionBtn{
+    background-color: #611f69;
+    padding: 0.8em 1.8em;
+    margin: 0 4px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.tabBtn1{
+    color: white;
+    cursor: pointer;
+}
+
+.tabBtn2{
+    background-color: white;
+    border: 1px solid #611f69;
+    color: #611f69;
+    cursor: pointer;
+}
+
+.business4{
+    height: 100%;
+}
+
+.business_heading{    
+    padding: 15em 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/svg/purple-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.business_heading h2{
+    font-size: 3.4em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.business_heading h1{
+    font-size: 7.5em;
+    color: #d17dfe;
+}
+
+.business_heading p{
+    font-size: 1.4em;
+    padding-top: 0.4em;
+    letter-spacing: 1.8px;
+}
+
+.business_heading sup{
+    margin-left: -0.3em;
+}
+
+.business_heading h2, .business_heading p{
+    font-weight: bolder;
+    color: white;
+}
+
+.estimations {
+    margin-top: 2.5em;
+    width: 85%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.estimationBlock{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.business_details{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.business_details h2{
+    font-size: 3em;
+}
+
+.business_detailed{
+    display: flex;
+    width: 80%;
+    height: 60%;
+    margin-top: 4em;
+}
+
+.detailedBox{
+    width: 60%;
+}
+
+.details_Box{
+    width: 60%;
+    height: 15%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+}
+
+.detBox1 {
+    border-right: 1px solid black;
+}
+
+.detBox1 p{
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 0.8em;
+}
+
+.detBox1 h2 {
+    font-size: 3.5em;
+}
+
+.img_container{
+    display: grid;
+    width: 60%;
+    margin: 1.3em auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.img_item{
+    display: block;
+    width: 100%;
+}
+
+.detBox2 h2 , .detBox2 p{
+    width: 70%;
+    font-size: 2.3em;
+    margin: 0.2em auto;
+}
+
+.detBox2 p {
+    font-size: 1.3em;
+}
+
+.slack_deep_dive{
+    height: 140%;
+}
+
+.slack_deep_dive h2{
+    margin: 1.3em 1.4em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.slack_deep_tab_collection{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slack_deep_tab{
+    margin-left: 2.2em;
+    width: 16%;
+    height: 46vh;
+    padding: 0.8%;
+    position: relative;
+    box-shadow: 6px 6px 12px rgb(206, 200, 200), -6px -6px 12px rgb(206, 200, 200);
+    margin-bottom: 4%;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+}
+
+.slack_deep_tab:hover{
+    transform: scale(1.06);
+}
+
+.slack_deep_tab p{
+    margin: 4% 0;
+}
+
+.slack_deep_tab h3{
+    font-size: 150%;
+    margin: 4% 0 30% 0;
+}
+
+.read_more{
+    font-size: 120%;
+    text-transform: uppercase;
+    color: #1264a3;
+}
+
+.read_more_cont i{
+    color: #1264a3;
+}
+
+.read_more_cont{
+    width: 88%;
+    position: absolute;
+    bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slack_deep_dive ol{
+    font-size: 0.75em;
+    width: fit-content;
+    margin: 1.3em auto;
+    padding-left: 0.4em;
+}
+
+ol li{
+    list-style-type: decimal;
+}
+
+.slack_deep_footer{
+    position: relative;
+    margin-top: 4em;
+}
+
+.slack_deep_footer img{
+    width: 100%;
+}
+
+.slack_deep_footer_content{
+    position: absolute;
+    bottom: 25%;
+    left: calc(50% - 425px);
+}
+
+.slack_deep_footer_content h1{
+    font-size: 3em;
+    color: white;
+}
+
+.slack_deep_footer_buttons{
+    width: 53%;
+    margin: 1.8em auto;
+}
+
+.slack_deep_footer_buttons button{
+    font-size: 1.2em;
+    padding: 0.6em 1.4em;
+    margin-left: 0.75em;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.slack_deep_footer_btn2{
+    border: 1px solid white;
+    background-color: #481a54;
+    color: white;
+}
+
+.slack_deep_footer_btn1{
+    color: #481a54;
+    border: none;
+}
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer img{
+    margin-top: 4em;
+    margin-right: 4em;
+}
+
+footer h3{
+    font-size: 1.6em;
+}
+
+.footer_list_content {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    padding: 4em 0;
+}
+
+.list_content li{
+    margin: 1.3em 0;
+    font-size: 1.1em;
+    color: #696969;
+}
+

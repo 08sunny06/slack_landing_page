@@ -1,0 +1,10 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1900" height="1600" viewBox="25 0 1900 1600">
+    
+  <path d="M0,-30 A950,140 0 1,0 1950,-30 L1950,1600 L0,1600 z"
+    style="stroke: #481a54; stroke-width: 2; fill: #481a54;"
+  />
+
+</svg>
