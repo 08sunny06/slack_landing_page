@@ -6,7 +6,7 @@
 }
 
 nav {
-    width: 70vw;
+    width: 80%;
     padding: 1rem;
     display: flex;
     background-color: white;
@@ -31,13 +31,23 @@ nav {
 nav ul{
     display: flex;
     align-items: center;
+    /* border: 2px solid
+    green; */
 }
 
 nav li {
-    padding: 0 10px;
-    font-size: 1em;
+    margin: 0 0.8rem;
+    font-size: 110%;
     font-weight: bold;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.2px solid;
+}
+
+.fa-caret-down{
+    margin: 0 0.4rem;
+}
+
+.bars{
+    display: none;
 }
 
 input[type="submit"]{
@@ -230,9 +240,9 @@ header .btn2 {
 
 .ellipse {
     display: block;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 60vh;
+    height: 60%;
     margin-top: -30em;
     z-index: -1;
     margin-bottom: 0;    
@@ -243,7 +253,7 @@ header .btn2 {
     padding-top: 4em;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 10em auto 0 auto;
     padding-bottom: 4em;
 }
 
@@ -283,7 +293,7 @@ header .btn2 {
     background-position: 9em;
     background-position-y: -2.1em;
     position: sticky;
-    top: 16vh;
+    top: 20vh;
 }
 
 .titleVidCollection{
@@ -294,7 +304,7 @@ header .btn2 {
     width: 33vw;
     border-radius: 6px;
     position: absolute;
-    transition: all 100ms linear;
+    transition: all 150ms linear;
 }
 
 .titleVidDisappear{
@@ -450,14 +460,15 @@ header .btn2 {
     height: 100%;
 }
 
-.business_heading{    
+.business_heading{
     padding: 15em 0;
+    padding-bottom: 8em;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("images/svg/purple-background.svg");
+    background-image: url("images/svg/purple-background-laptop.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -467,7 +478,7 @@ header .btn2 {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .business_heading h1{
@@ -642,6 +653,7 @@ header .btn2 {
 
 ol li{
     list-style-type: decimal;
+    color: gray;
 }
 
 .slack_deep_footer{
@@ -651,6 +663,10 @@ ol li{
 
 .slack_deep_footer img{
     width: 100%;
+}
+
+.lowerCircle_mobile{
+    display: none;
 }
 
 .slack_deep_footer_content{
@@ -716,3 +732,711 @@ footer h3{
     color: #696969;
 }
 
+@media screen and (max-width: 450px) {
+    
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        top: 0; 
+    }
+
+    .nav_details li, .nav_inputs input, .nav_inputs li:nth-child(3) {
+        display: none;
+    }
+
+    .nav_details li:first-child, .bars {
+        display: block;
+    }
+
+    .nav_inputs li{
+        margin-right: 0;
+    }
+
+    .nav_inputs li:nth-child(1){
+        margin-right: 1rem;
+    }
+
+    .nav_inputs li:nth-child(2){
+        margin-right: -1rem;
+    }
+
+    .nav_extra_styling{
+        border-radius: 0;
+    }
+
+    header{
+        margin-top: 40%;
+        width: 80%;
+        font-size: 65%;
+        padding-top: 2%;
+    }
+
+    header h1 {
+        margin-bottom: 5%;
+    }
+
+    .scrollHeading{
+        animation-iteration-count: 0;
+        width: 20%;
+    }
+
+    .scrollHeading li{
+        animation-iteration-count: 0;
+    }
+
+    header p{
+        width: 90%;
+        font-size: 167%;
+        text-align: justify;
+    }
+
+    header button {
+        width: 100%;
+        font-size: 130%;
+    }
+
+    .fa-arrow-right{
+        margin-top: 4%;
+    }
+
+    .pictorial {
+        margin: 15% auto;
+        width: 80%;
+    }
+
+    .pictorial ul {
+        flex-wrap: wrap;
+    }
+
+    .pictorial li{
+        margin: 2% 5%;
+    }
+
+    .pictorial video{
+        width: 95%;
+        margin: 18% 0 2% 2%;
+        /* border: 2px solid
+        green; */
+    }
+
+    .title{
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .title h1{
+        font-size: 180%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .title ul {
+        display: none;
+    }
+
+    .ellipse{        
+        position: absolute;
+        bottom: -35%;
+        height: 45%;
+    }
+
+    .titleExplain {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .titleCummulative{
+        padding: 0;
+        padding-top: 15%;
+        position: relative;
+    }
+
+    .titleDetails{
+        width: 80%;
+        font-size: 120%;
+        margin: 95% auto;
+    }
+
+    .titleDetails:nth-child(1){
+        margin-top: 15%;
+    }
+
+    .titleDetails:last-child {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .titleVid{
+        background-image: none;
+        height: 60%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        position: static;
+    }
+
+    .titleVidCollection{
+        position: static;
+    }
+
+    .titleVid video {
+        position: absolute;
+        display: block;
+        width: 110%;
+        margin: 0 auto;
+    }
+
+    .titleDetails:nth-child(1){
+        anchor-name: --title_video_1;
+    }
+    
+    .titleDetails:nth-child(2){
+        anchor-name: --title_video_2;
+    }
+    
+    .titleDetails:nth-child(3){
+        anchor-name: --title_video_3;
+    }
+    
+    .titleDetails:nth-child(4){
+        anchor-name: --title_video_4;
+    }
+
+    .titleVid video:nth-child(1){
+        position-anchor: --title_video_1;
+        position-area: bottom center;
+        transform: translate(-5%, 20%);
+    }
+
+    .titleVid video:nth-child(2){
+        position-anchor: --title_video_2;
+        position-area: bottom center;
+        transform: translate(-5%, 20%);
+    }
+
+    .titleVid video:nth-child(3){
+        position-anchor: --title_video_3;
+        position-area: bottom center;
+        transform: translate(-5%, 20%);
+    }
+
+    .titleVid video:nth-child(4){
+        position-anchor: --title_video_4;
+        position-area: bottom center;
+        transform: translate(-5%, 20%);
+    }
+
+    .lastDetail {
+        margin-top: 100%;
+        padding-top: 0;
+        width: 85%;
+        margin-bottom: 20%;
+    }
+
+    .Agentforce{
+        font-size: 60%;
+    }
+
+    .Agentforce h4{
+        font-size: 120%;
+    }
+
+    .Agentforce p{
+        font-size: 160%;
+    }
+
+    .lastDetail video{
+        display: none;
+    }
+
+    .innovation{
+        margin-top: 15%;
+        width: 80%;
+        font-size: 180%;
+    }
+
+    .tabBtns{
+        width: 90%;
+        padding-left: 0;
+        margin-top: 15%;
+    }
+
+    .tabSectionBtn{
+        width: 100%;
+        margin: 2% auto;
+    }
+
+    .tabBtn1 {
+        font-size: 120%;
+    }
+
+    .tabBtn2{
+        font-size: 106%;
+    }
+
+    .tabs{
+        width: 90%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;        
+        scroll-behavior: smooth;
+        anchor-name: --tabs_scroll_button;   
+        scroll-marker-group: after;
+    }
+
+     .tabs::scroll-marker-group{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        gap: 6%;
+    }
+
+    .tabs::scroll-button(right), .tabs::scroll-button(left){
+        content: '→';
+        font-size: 140%;
+        font-weight: bolder;
+        padding: 35%;
+        padding-top: 0;
+        color: white;
+        background-color: blueviolet;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        position-anchor: --tabs_scroll_button;
+        position-area: right center;
+        transform: translateX(-50%);
+        z-index: 1;
+    }    
+
+    .tabs::scroll-button(left){
+        content: '←';
+        position-area: left center;
+        transform: translateX(50%);
+    }
+
+    .tabs::scroll-button(right):disabled, .tabs::scroll-button(left):disabled{
+        background-color: grey;
+    }
+
+    .tabDetails{
+        min-width: 100%;
+        position: relative;
+        scroll-snap-align: start;
+    }
+
+    .tabDetails::scroll-marker{
+        content: '';
+        height: 0.6em;
+        width: 0.6em;
+        border-radius: 50%;
+        background-color: grey;
+    }
+
+    .tabDetails::scroll-marker:target-current{
+        background-color: #1264a3;
+    }
+
+    .tabDetails:first-child{
+        margin-left: 0;
+    }
+
+    .tabDetails img{
+        position: absolute;
+        top: 12%;
+        left: 5%;
+    }
+
+    .exceptVid {
+        opacity: 1;
+        width: 100%;
+        font-size: 130%;
+        height: 80%;
+        top: 25%;
+        left: 3%;    
+    }
+    
+    svg {    
+        position: absolute;    
+        right: 0;    
+        top: 120%;
+    }
+
+    .firstSvg {
+        top: 90%;
+    }
+
+    .business_heading h2{
+        width: 80%;
+        font-size: 200%;
+        margin-bottom: 0;
+    }
+
+    .business_heading{
+        padding-top: 42%;
+        padding-bottom: 25%;
+        background-image: url("images/svg/purple-background-mobile.svg");
+    }
+
+    .estimations{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .estimationBlock{
+        width: 70%;
+        font-size: 100%;
+        margin: 5% 0;
+    }
+
+    .estimationBlock h1{
+        font-size: 280%;
+    }
+
+    .business_details{
+        /* border: 2px solid
+        blue; */
+        height: 100%;
+        width: 90%;
+        padding-top: 10%;
+        margin: 0 auto;
+    }
+
+    .business_details h2 {
+        font-size: 250%;
+        text-align: center;
+    }
+
+    .business_detailed{
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 50%;
+    }
+
+    .detailedBox{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .detBox1{
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding-top: 0;
+    }
+
+    .detBox2{
+        padding: 4% 0;
+    }
+
+    .details_Box{
+        flex-direction: column;
+        width: 100%;
+        margin: 6% 0;
+
+        h2{
+            font-size: 700%;
+        }
+
+        p{
+            font-size: 250%;
+            margin-left: 0;
+            margin-bottom: 10%;
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+    .details_Box:nth-child(2) p{
+        width: 100%;
+    }
+
+    .detBox2{
+        margin-top: 4%;
+
+        h2{
+            font-size: 440%;
+            margin-bottom: 4%;
+            width: 100%;
+        }
+
+        p{
+            font-size: 280%;
+            width: 100%;
+            margin-bottom: 8%;
+            text-align: center;
+        }
+    }
+
+    .img_container{
+        margin-top: 15%;
+        height: 100%;
+        width: 100%;
+        gap: 10% 2%;
+    }
+    
+    .slack_deep_dive{
+        margin-top: 14%;
+        padding-top: 14%;
+        width: 90%;
+        margin: 0 auto;
+        
+        h2{
+            font-size: 250%;
+            text-align: center;
+            width: 100%;
+            margin: 4% auto 15% auto;
+        }
+
+        .slack_deep_tab_collection{
+            justify-content: start;
+            width: 75%;
+            height: 55vh;
+            margin: auto;
+            overflow: scroll;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            anchor-name: --slack-arrow;
+            scroll-marker-group: after;
+
+            .slack_deep_tab{
+                min-width: 90%;
+                height: 90%;
+                padding: 6%;
+                padding-top: 6%;
+                transition: none;
+                scroll-snap-align: center;
+
+                img{
+                    display: block;
+                    width: 100%;
+                }
+
+                h3{
+                    margin-bottom: 30%;
+                }
+
+                .read_more_cont{
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-top: 20%;
+                    align-items: center;
+                }
+            }
+
+            .slack_deep_tab::scroll-marker{
+                content: '';
+                height: 0.8em;
+                width: 0.8em;
+                border-radius: 50%;
+                background-color: gray;
+            }
+
+            .slack_deep_tab::scroll-marker:target-current{
+                background-color: #611f69;
+            }
+
+            .slack_deep_tab:nth-child(4){
+                margin-right: 6%;
+            }
+
+            .slack_deep_tab:hover{
+                transform: none;
+            }
+        }
+
+        .slack_deep_tab_collection::scroll-marker-group{
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+            margin-left: 4%;
+            gap: 6%;
+        }
+
+        .slack_deep_tab_collection::scroll-button(left), .slack_deep_tab_collection::scroll-button(right){
+            content: '←';
+            min-height: 9%;
+            padding: 8% 16%;
+            padding-top: 0;
+            border-radius: 50%;
+            position-anchor: --slack-arrow;
+            position: absolute;
+            position-area: left center;
+            border: none;
+            background-color: #611f69;
+            transform: translateX(50%);
+            color: #d1f1ff;
+            z-index: 15;
+        }
+
+        .slack_deep_tab_collection::scroll-button(right){
+            content: '→';
+            position-area: right center;
+            transform: translateX(-50%);
+        }
+
+        .slack_deep_tab_collection::scroll-button(left):disabled, .slack_deep_tab_collection::scroll-button(right):disabled{
+            opacity: 0.7;
+        }
+
+        ol{
+            margin-top: 30%;          
+
+            li{
+                list-style-type: decimal;
+                font-size: 140%;
+            }
+        }
+    }
+    
+    .slack_deep_footer{
+
+        img {
+            display: none;
+        }
+
+        .lowerCircle_mobile{
+            display: block;
+        }
+
+        .slack_deep_footer_content{
+            height: 60%;
+            left: 0;
+            top: 20%;
+            h1{
+                font-size: 200%;
+                width: 68%;
+                text-align: justify;
+                margin: 0 auto;
+            }
+        }
+
+        .slack_deep_footer_buttons{
+            margin: 6% auto;
+            width: 90%;
+
+            button{
+                width: 100%;
+                margin: 3% 0;
+            }
+        }
+    }
+
+    footer{        
+        display: block;
+        margin-bottom: 4%;
+        
+        img {
+            display: none;
+        }
+
+        .footer_list_content{
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+
+            .footer_content{
+                padding-top: 8%;
+                
+                h3{
+                    text-transform: capitalize;
+                }
+
+                h3::after{
+                    content: '';
+                    display: block;
+                    float: right;
+                    width: 3%;
+                    height: 1rem;
+                    background-image: url('images/svg/right_arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+                .list_content {
+                    height: 0;
+                    overflow: hidden;
+                }
+
+                .list_content_fall_down{
+                    height: 100%;
+                    overflow: visible;
+                }
+            }
+
+            .footer_content:nth-child(0){
+                
+                .list_content{
+                    height: 100%;
+                    overflow: visible;
+                }
+
+                h3::after{
+                    transform: rotateZ(90deg);
+                }
+            }
+
+            .footer_content:first-child{
+                border-top: 1px solid lightgray;
+            }
+
+            .footer_content:last-child{
+                border-bottom: 1px solid lightgray;
+                padding-bottom: 8%;
+            }
+        }
+    }
+
+    .h3_arrow_change{
+        transform: rotateZ(90deg);
+    }    
+}
+
+@media screen and (max-width: 375px) {
+
+    .title h1 {
+        margin-top: 22%;
+        font-size: 150%;
+    }
+    
+    .ellipse{
+        bottom: -25%;
+    }
+
+    .slack_deep_footer {
+    
+        .slack_deep_footer_content{ 
+            
+            h1 {
+                font-size: 180%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    .title h1{
+        font-size: 140%;
+    }
+    
+    .ellipse{
+        bottom: -22%;
+    }
+
+    .slack_deep_footer {
+    
+        .slack_deep_footer_content{ 
+            
+            h1 {
+                font-size: 150%;
+            }
+        }
+    }
+    
+}
